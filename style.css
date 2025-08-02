@@ -1,3 +1,16 @@
+/* Responsive pour la galerie de produits */
+.responsive-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: clamp(20px, 4vw, 40px);
+}
+
+@media (max-width: 600px) {
+  .responsive-gallery {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+}
 /* =============================================== */
 /* STYLE GLOBAL ET VARIABLES (POUR TOUT LE SITE) */
 /* =============================================== */
